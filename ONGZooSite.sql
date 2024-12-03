@@ -68,13 +68,6 @@ CREATE TABLE IF NOT EXISTS Doacao(
     	descricao varchar(60)
 );
 
-CREATE TABLE IF NOT EXISTS Evento(
-	idEvento int primary key not null auto_increment,
-	nomeEvento varchar(50) not null,
-	dataEvento date not null,
-	descricaoEvento varchar(100)
-    );
-
 CREATE TABLE IF NOT EXISTS Adm(
 	idFuncionario int primary key not null auto_increment,
 	senha varchar(15) not null,
