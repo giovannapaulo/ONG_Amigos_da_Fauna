@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de login para acessar o sistema da ONG Amigos da Fauna.">
+    <title>Login - Amigos da Fauna</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícones do Bootstrap -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilo Personalizado -->
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Área de Login -->
+    <section class="d-flex justify-content-center align-items-center vh-100">
+        <div class="user-container">
+            <div class="login-container p-4 shadow-lg rounded bg-light">
+                <form id="loginForm" action="#" method="post">
+                    <h2 class="text-center mb-4">Login</h2>
+
+                    <!-- Campo de E-mail -->
+                    <div class="input-box mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <ion-icon name="mail-sharp"></ion-icon>
+                            </span>
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+                        </div>
+                    </div>
+
+                    <!-- Campo de Senha -->
+                    <div class="input-box mb-3">
+                        <label for="password" class="form-label">Senha</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <ion-icon name="lock-closed-sharp"></ion-icon>
+                            </span>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Sua senha" required>
+                        </div>
+                    </div>
+
+                    <!-- Opção de Lembrar Login -->
+                    <div class="remember-forgot d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember" class="form-check-label">Mantenha-me conectado</label>
+                        </div>
+                        <a href="#" class="text-decoration-none">Esqueceu a senha?</a>
+                    </div>
+
+                    <!-- Botão de Login -->
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+
+                    <!-- Link para Registro -->
+                    <div class="register-link text-center mt-3">
+                        <p>Ainda não tem uma conta? <a href="register.html" class="text-decoration-none" style="color: green;">Cadastre-se aqui</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ícones Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script de Login -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtendo valores dos campos
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Verificando credenciais
+            if (email === 'adm' && password === '123') {
+                window.location.href = 'adm.html';  // Redireciona para a página administrativa
+            } else {
+                window.location.href = 'usuario.html';  // Redireciona para a área do usuário
+            }
+        });
+    </script>
+</body>
+</html>

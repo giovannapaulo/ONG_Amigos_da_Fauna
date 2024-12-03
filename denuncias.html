@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias</title>
+    
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/denuncias.css" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <!-- SEÇÃO ACIMA DA NAVBAR --> 
+       
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Rua São Vicente, 20, 12900-000 Bragança Paulista, SP, Brasil.
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:amigosdafauna@gmail.com">
+                            amigosdafauna@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-youtube"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- INICIO DA NAVBAR --> 
+     
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
+                <span>
+                    Amigos da Fauna
+                    <small>Organização Não Governamental (ONG)</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_2">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_3">Nossos Animais</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_4">Seja Voluntário</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Como Ajudar</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="eventos.html">Nossos Eventos</a></li>
+
+                            <li><a class="dropdown-item" href="denuncias.html">Denuncie Já!</a></li>
+                            <li><a class="dropdown-item" href="doacao.html">Doe Já!</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="login.html">Login/Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+           <!-- FIM DA NAVBAR -->
+            
+           
+           <!-- INICIO DA SEÇÃO DENUNCIAS --> 
+
+           <section class="complaint-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h3 class="text-white mb-4">Proteja quem não pode se defender: denuncie os maus-tratos!</h3>
+
+                        <form class="custom-form complaint-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                            <h3 class="mb-4">Denúncia</h3>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" name="complaint-name" id="complaint-name" class="form-control" placeholder="Nome (Opcional)" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">    
+                                    <input type="email" name="complaint-email" id="complaint-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Endereço da ocorrência" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">    
+                                    <input type="email" name="complaint-email" id="complaint-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Data da ocorrência (dd/mm/aaaa)" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <div class="input-group input-group-file">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                        
+                                        <label class="input-group-text" for="inputGroupFile02">Upload de imagem (Opcional)</label>
+
+                                        <i class="bi-cloud-arrow-up ms-auto"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <textarea name="complaint-message" rows="3" class="form-control" id="complaint-message" placeholder="Mensagem"></textarea>
+
+                            <button type="submit" class="form-control">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <img src="images/denuncie/8e2beb95-130d-4bf0-a317-f17ff714454e.jpeg" class="complaint-image img-fluid" alt="">
+
+                        <div class="custom-block-body text-center">
+                            <h4 class="text-white mt-lg-3 mb-lg-3"></h4>
+
+                            <p class="text-white">Denuncie o tráfico e os maus-tratos contra animais silvestres! Muitos animais são retirados de seu habitat natural e submetidos a condições de sofrimento e exploração. Sua denúncia ajuda a proteger esses animais, contribuindo para a preservação da nossa biodiversidade e evitando a extinção de espécies ameaçadas. Juntos, podemos garantir que esses animais tenham uma vida digna e segura. Faça a sua parte!</p>
+                        </div>
+                    </div>
+
+
+                    <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/custom.js"></script>
+
+</body>
+</html>

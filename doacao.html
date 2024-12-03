@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe Já</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
+</head>
+<body>
+    <!-- SEÇÃO ACIMA DA NAVBAR --> 
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Rua São Vicente, 20, 12900-000 Bragança Paulista, SP, Brasil.
+                    </p>
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+                        <a href="mailto:amigosdafauna@gmail.com">amigosdafauna@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter"></a></li>
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-facebook"></a></li>
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- INICIO DA NAVBAR --> 
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity">
+                <span>
+                    Amigos da Fauna
+                    <small>Organização Não Governamental (ONG)</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_2">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_3">Nossos Animais</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="index.html#section_4">Seja Voluntário</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Como Ajudar</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="eventos.html">Nossos Eventos</a></li>
+
+                            <li><a class="dropdown-item" href="denuncias.html">Denuncie Já!</a></li>
+                            <li><a class="dropdown-item" href="doacao.html">Doe Já!</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="login.html">Login/Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INICIO DA SEÇÃO DE DOAÇÕES -->
+    <section class="donation-section section-padding" id="section_5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <h3 class="mb-4">Ajude-nos a salvar vidas!</h3>
+                    <p>Com sua contribuição, podemos continuar cuidando de animais abandonados, resgatados de maus-tratos e que precisam de tratamentos médicos, alimentação e abrigo. Toda ajuda é essencial e faz a diferença!</p>
+                    
+                    <form class="custom-form donation-form" action="#" method="post" role="form">
+                        <h3 class="mb-4">Faça sua Doação</h3>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <input type="text" name="donor-name" id="donor-name" class="form-control" placeholder="Nome Completo" required>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <input type="email" name="donor-email" id="donor-email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <input type="number" name="donation-amount" id="donation-amount" class="form-control" placeholder="Valor da Doação (R$)" required>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <select name="payment-method" id="payment-method" class="form-control">
+                                    <option value="" disabled selected>Método de Pagamento</option>
+                                    <option value="pix">PIX</option>
+                                    <option value="boleto">Boleto</option>
+                                    <option value="cartao">Cartão de Crédito</option>
+                                </select>
+                            </div>
+                        </div>
+                        <textarea name="donor-message" rows="3" class="form-control" id="donor-message" placeholder="Mensagem (Opcional)"></textarea>
+                        <button type="submit" class="form-control btn btn-primary mt-3">Contribuir</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img src="images/denuncie/araras-cetas-c.jpg" class="img-fluid" alt="Ajude os animais">
+                    <p class="mt-4">Juntos, podemos transformar a vida de muitos animais. Doe agora e seja parte dessa mudança!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <p class="copyright-text mb-0">Copyright © 2036 <a href="#">Amigos da Fauna</a>. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center mx-auto">
+                    <ul class="social-icon">
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter"></a></li>
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-facebook"></a></li>
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
+                        <li class="social-icon-item"><a href="#" class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
